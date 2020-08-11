@@ -1,0 +1,141 @@
+/* LOGO */
+.part-first {
+  color: $additional-color;
+}
+
+.part-second {
+  color: $black-title-color;
+}
+
+.footer-logo .part-second {
+  color: #ffffff;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-right: 85px;
+  padding-bottom: 25px;
+  padding-top: 24px;
+}
+
+/* NAVIGATION */
+
+.nav a {
+  color: $black-title-color;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-property: color;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: $additional-color;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav.list {
+  display: flex;
+}
+
+.nav .nav-item + .nav-item {
+  margin-left: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .active-page {
+  color: $additional-color;
+}
+
+.active-page::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $additional-color;
+  border-radius: 2px;
+}
+
+.active-page {
+  position: relative;
+}
+
+/* CONTACTS */
+
+.contacts a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-container {
+  margin-left: auto;
+}
+
+.contacts .contact-item + .contact-item {
+  margin-left: 50px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item a:hover,
+.contact-item a:focus {
+  color: $additional-color;
+}
+
+.contact-item a:hover .contact-icon,
+.contact-item a:focus .contact-icon {
+  fill: $additional-color;
+}
+
+.contact-icon {
+  fill: $primary-text-color;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+
+  transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
