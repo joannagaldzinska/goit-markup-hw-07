@@ -7,13 +7,8 @@
 .activities-list {
   display: flex;
   justify-content: space-between;
-}
 
-.activities-list-item {
-  position: relative;
-}
-
-.activities-list h3 {
+  h3 {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -23,6 +18,12 @@
   text-align: center;
   padding-top: 27px;
   padding-bottom: 27px;
+  @extend %smallTitle;
+  }
+}
+
+.activities-list-item {
+  position: relative;
 }
 
 .activities-list-item img {

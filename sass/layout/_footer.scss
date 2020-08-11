@@ -1,43 +1,50 @@
-/* footer */
-
 footer {
   background-color: $footer-bgc;
 }
+
 .footer-logo {
   margin-right: 0px;
   margin-bottom: 20px;
   padding: 0;
+
+  .part-second {
+    color: #ffffff;
+  }
 }
 
 .location {
   display: flex;
   flex-direction: column;
-}
-.location .map {
+
+  .map {
   color: $white-title-color;
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
   text-decoration: none;
   margin-bottom: 9px;
+  }
 }
+
 
 .footer-contacts {
   display: flex;
   flex-direction: column;
-}
 
-.footer-contacts .footer-contacts-details {
+  .footer-contacts-details { 
   color: rgba(255, 255, 255, 0.6);
   font-size: inherit;
   line-height: 1.7;
   font-style: normal;
   text-decoration: none;
+  }
+
+  li {
+  margin-bottom: 9px;
+  }
 }
 
-.footer-contacts > li {
-  margin-bottom: 9px;
-}
+
 .attention {
   display: block;
   color: $white-title-color;
@@ -67,23 +74,18 @@ footer {
   display: flex;
   justify-content: end;
   padding-top: 72px;
-}
 
-.footer-attention .item-icon {
+  .item-icon {
   fill: #fff;
-}
+  }
 
-.footer-attention .sm-list-item-icon {
+  .sm-list-item-icon {
   background-color: rgba(255, 255, 255, 0.1);
 
-  transition-property: background-color;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sm-list-item-icon:hover,
-.sm-list-item-icon:focus {
-  background-color: $additional-color;
+    &:hover, &:focus{
+    background-color: $additional-color;
+    }
+  }
 }
 
 .subscribe {
@@ -114,9 +116,8 @@ footer {
 
 .subscribe-button {
   margin-left: 12px;
-}
 
-.subscribe-button::after {
+  &::after{
   content: "";
   display: inline-block;
   background-repeat: no-repeat;
@@ -125,4 +126,5 @@ footer {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+  }
 }
